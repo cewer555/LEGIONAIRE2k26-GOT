@@ -355,7 +355,9 @@ footer .footer-sigil {
   display:block; font-size:1.4rem;
   margin-bottom:8px;
 }
-
+.nav-arrow{
+    display:none;
+}
 /* ─────────────────── RESPONSIVE ─────────────────── */
 @media(max-width:768px){
   .container { padding:80px 20px 60px; }
@@ -363,7 +365,10 @@ footer .footer-sigil {
   .section-header { font-size:1.15rem; }
   .rounds-grid { grid-template-columns:1fr; }
   .rule-item { font-size:.97rem; }
-  .nav-back { left:16px; font-size:.7rem; }
+  .nav-back { display:none; left:16px; font-size:.7rem; margin-right:20px;}
+  .nav-arrow{
+    display:flex;
+  }
   .nav-title { font-size:.8rem; }
 }
 @media(max-width:480px){
@@ -385,6 +390,8 @@ footer .footer-sigil {
 <!-- ─── NAVBAR ─── -->
 <nav class="navbar">
   <a href="index.html" class="nav-back">← Return to Realm</a>
+  <a href="index.html" class="nav-back nav-arrow">←</a>
+
   <div class="nav-title">Codeathon Laws</div>
 </nav>
 
