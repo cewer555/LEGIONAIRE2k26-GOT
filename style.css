@@ -1,21 +1,34 @@
 /* ─────────────────────── VARIABLES ─────────────────────── */
-:root {
-  --gold:         #c9a227;
-  --gold-light:   #e8d06a;
-  --gold-dim:     #8a6d14;
-  --crimson:      #8b1a1a;
-  --crimson-light:#b33030;
-  --stone-dark:   #0e0c09;
-  --stone-mid:    #1a1714;
-  --stone-light:  #2a2420;
-  --parchment:    #e8dcc8;
-  --ink:          #2c2118;
-  --text-main:    #d4c5a0;
-  --text-muted:   #8a7d60;
+
+  :root {
+  /* --- The Silver/Steel Palette --- */
+  --gold:         #9ea7ad; /* Polished Steel Base */
+  --gold-light:   #ffffff; /* High-shine Chrome Highlight */
+  --gold-dim:     #4a555c; /* Deep Oxidized Metal */
+
+  /* --- The Night's Watch Blue (Replaces Crimson) --- */
+  --crimson:      #1a2a33; /* Deep Frosty Navy */
+  --crimson-light:#3d5a6d; /* Glacial Blue Accent */
+
+  /* --- The Iron & Obsidian (Backgrounds) --- */
+  --stone-dark:   #05070a; /* Pure Obsidian */
+  --stone-mid:    #0f1217; /* Dark Cast Iron */
+  --stone-light:  #1e2329; /* Weathered Granite */
+
+  /* --- Paper & Contrast --- */
+  --parchment:    #d1d9e0; /* Cold Zinc/Paper */
+  --ink:          #0a0c0f; /* Black Charcoal */
+
+  /* --- Typography --- */
+  --text-main:    #e0e6eb; /* Silver-White Text */
+  --text-muted:   #707d8a; /* Cold Grey Subtext */
+
+  /* --- Fonts (Kept your excellent choices) --- */
   --font-title:   'Cinzel Decorative', serif;
   --font-head:    'Cinzel', serif;
   --font-body:    'EB Garamond', serif;
 }
+
 
 /* ─────────────────────── RESET ─────────────────────── */
 *, *::before, *::after {
@@ -308,7 +321,10 @@ body::before {
 }
 
 .event-card-back { transform:rotateY(180deg); justify-content:center; }
-
+.event-card:hover{
+  border-color: rgba(201,162,39,.5);
+  box-shadow: 0 0 12px rgba(201,162,39,.3);
+}
 /* icon number */
 .event-number {
   font-family: var(--font-title);
@@ -462,6 +478,7 @@ body::before {
 
 /* ── Tablet (≤ 1024px) ── */
 @media(max-width:1024px){
+  
   .events-grid {
     grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
     gap:22px;
@@ -476,6 +493,7 @@ body::before {
 /* ── Small Tablet (≤ 768px) ── */
 @media(max-width:768px){
   /* hero */
+  .logo{width:400px;}
   .hero { min-height:100vh; padding-top:58px; }
   .hero::before { top:48px; left:16px; font-size:1.8rem; }
   .hero::after  { bottom:24px; right:16px; font-size:1.8rem; }
