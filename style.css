@@ -322,7 +322,7 @@ body::before {
 
 .event-card-back { transform:rotateY(180deg); justify-content:center; }
 .event-card:hover{
-  border-color: rgba(201,162,39,.5);
+  border-color: rgba(201,162,39,.6);
   box-shadow: 0 0 12px rgba(201,162,39,.3);
 }
 /* icon number */
