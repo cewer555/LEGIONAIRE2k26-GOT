@@ -751,3 +751,66 @@ footer .footer-sigil {
   color:rgba(201,162,39,.25);
   margin-bottom:8px;
 }
+/* map */
+.contact-map {
+  padding: 1rem 0.5rem;
+  background: var(--stone-mid);
+  font-family: var(--font-head);
+  color: #e8e8ff;
+}
+
+.contact-map-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.contact-info h2 {
+  font-size: 2.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.contact-info p {
+  color: #a2a3c7;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.map-frame {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 0 35px rgba(124,124,255,0.25),
+    inset 0 0 50px rgba(0,0,0,0.5);
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  filter: grayscale(20%) contrast(1.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-map-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .map-frame iframe {
+    height: 320px;
+  }
+}

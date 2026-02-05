@@ -120,7 +120,22 @@ strong {
   background-clip:text;
   font-weight:700;
 }
-
+.button-section{
+  display:flex; justify-content:center;
+}
+button{
+  background: linear-gradient(145deg, rgba(201,162,39,.12), rgba(201,162,39,.05));
+  border:1px solid rgba(201,162,39,.22);
+  border-radius:6px;
+  padding:12px 18px;
+  font-family: var(--font-head);
+  font-size:.95rem;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color: var(--text-main);
+  cursor:pointer;
+  transition: all .3s ease;
+}
 .nav-back {
   background: linear-gradient(
     180deg,
@@ -502,7 +517,10 @@ footer .footer-sigil {
   </div>
 </section>
 
-</section>
+<section class="section button-section">
+  <a href="https://forms.gle/i4b21g4zdU8bjyJ39" class="btn-cta"><button>Pledge Your Oath</button></a>
+
+  </section>
 
 </div>
 <!-- ─── FOOTER ─── -->

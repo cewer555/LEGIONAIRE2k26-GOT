@@ -96,7 +96,9 @@ footer p {
   background-clip: text;
   filter: drop-shadow(0 1px 1px rgba(0,0,0,.4));
 }
-
+.button-section{
+  display:flex; justify-content:center;
+}
 /* Crimson warning metallic */
 .disqualify-warning {
   background: linear-gradient(
@@ -256,6 +258,19 @@ body::before {
   display:flex;
   align-items:center;
   gap:12px;
+}
+button{
+  background: linear-gradient(145deg, rgba(201,162,39,.12), rgba(201,162,39,.05));
+  border:1px solid rgba(201,162,39,.22);
+  border-radius:6px;
+  padding:12px 18px;
+  font-family: var(--font-head);
+  font-size:.95rem;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color: var(--text-main);
+  cursor:pointer;
+  transition: all .3s ease;
 }
 .section-header::before {
   content:'⚔';
@@ -547,6 +562,10 @@ footer .footer-sigil {
     <div class="rule-item">Harish V – <strong>7550100962</strong></div>
 
     </div>
+  </section>
+  <section class="section button-section">
+  <a href="https://forms.gle/i4b21g4zdU8bjyJ39" class="btn-cta"><button>Pledge Your Oath</button></a>
+
   </section>
 
 </div>
