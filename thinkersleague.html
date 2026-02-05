@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Codeathon — Laws of the Battle | Legionaire 2K26</title>
+<title>ThinkersLeague Laws of the Battle | Legionaire 2K26</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 /* ─────────────────────── VARIABLES ─────────────────────── */
@@ -22,7 +22,7 @@
   --text-muted:   #2a2420;
   --font-title:   'Cinzel Decorative', serif;
   --font-head:    'Cinzel', serif;
-  --font-body:    'EB Garamond', serif;
+  --font-body:    'Cinzel', serif;
 }
 
 /* ─────────────────────── RESET ─────────────────────── */
@@ -47,7 +47,7 @@ body {
 .page-title,
 .section-header,
 .rule-category h3,
-.round-title {
+.round-title{
   background: linear-gradient(
     180deg,
         #9ea7ad,
@@ -122,7 +122,16 @@ strong {
 }
 
 .nav-back {
-  background:linear-gradient(180deg,#c4b56a 0%,#8a6d14 40%,#d4b84a 60%,#7a6318 100%);
+  background: linear-gradient(
+    180deg,
+        #9ea7ad,
+   #ffffff, 
+    #4a555c, 
+
+  
+   #1a2a33,
+  hsl(204, 28%, 70%) 
+  );
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
@@ -180,7 +189,7 @@ body::before {
   position:fixed; top:0; left:0; width:100%; height:58px;
   display:flex; align-items:center; justify-content:center;
   background: rgba(14,12,9,.92);
-  border-bottom:1px solid rgba(201,162,39,.25);
+  border-bottom:1px solid silver;
   z-index:9999;
   backdrop-filter: blur(6px);
 }
@@ -238,7 +247,8 @@ body::before {
   margin-bottom:56px;
 }
 .section-header {
-  font-family: var(--font-head);
+  
+  font-family: var(--font-body);
   font-size:1.4rem;
   letter-spacing:2px;
   text-transform:uppercase;
@@ -255,16 +265,16 @@ body::before {
 /* parchment box */
 .parchment-box {
   background: linear-gradient(145deg, rgba(232,220,200,.12), rgba(232,220,200,.05));
-  border:1px solid silver;
+  border:1px solid rgba(201,162,39,.22);
   border-radius:6px;
   padding:28px 26px;
   position:relative;
-  box-shadow: inset 0 1px 0 silver;
+  box-shadow: inset 0 1px 0 rgba(201,162,39,.08);
 }
 .parchment-box::before {
   content:'';
   position:absolute; top:0; left:15%; right:15%; height:2px;
-  background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+  background: linear-gradient(90deg, transparent, silver, transparent);
 }
 
 /* rule items */
@@ -410,7 +420,7 @@ footer .footer-sigil {
   <div class="page-header">
     <h1 class="page-title">Thinkers League</h1>
     <div class="divider"></div>
-    <p class="subtitle">Laws & Decrees of the Lone Duel</p>
+    <p class="subtitle">Laws & Decrees of the Kings Landing</p>
   </div>
 
   <!-- Team Details -->
