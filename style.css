@@ -811,6 +811,12 @@ footer .footer-sigil {
   }
 
   .map-frame iframe {
-    height: 320px;
+    height: 200px;
+  }
+  .contact-map {
+    padding: 2rem;
+  }
+  .contact-info h2 {
+    font-size: 1.8rem;
   }
 }
