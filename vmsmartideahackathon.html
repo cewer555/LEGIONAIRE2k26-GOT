@@ -9,7 +9,7 @@
 /* ─────────────────────── VARIABLES ─────────────────────── */
 :root {
   --gold:         silver;
-  --gold-light:   #e8d06a;
+  --gold-light:   silver;
   --gold-dim:     #8a6d14;
   --crimson:      #8b1a1a;
   --crimson-light:#b33030;
@@ -50,13 +50,13 @@ body {
 .round-title {
   background: linear-gradient(
     180deg,
-    #f5e6a3 0%,   /* highlight */
-    #c9a227 25%,  /* true gold */
-    #8a6d14 45%,  /* shadow */
-    #e8d06a 55%,  /* mid shine */
-    #c9a227 70%,  /* gold again */
-    #6b5210 85%,  /* deep shadow */
-    #d4b84a 100%  /* bottom gleam */
+        #9ea7ad,
+   #ffffff, 
+    #4a555c, 
+
+  
+   #1a2a33,
+  hsl(204, 28%, 70%) 
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -114,7 +114,7 @@ footer p {
 }
 
 strong {
-  background: linear-gradient(180deg,#f5e6a3 0%,#c9a227 30%,#8a6d14 50%,#e8d06a 70%,#c9a227 100%);
+  background: white;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
@@ -128,7 +128,15 @@ strong {
   background-clip:text;
 }
 .nav-title {
-  background:linear-gradient(180deg,#f5e6a3 0%,#c9a227 50%,#8a6d14 100%);
+  background:linear-gradient(180deg,
+  #9ea7ad,
+   #ffffff, 
+    #4a555c, 
+
+  
+   #1a2a33,
+  #3d5a6d
+  );
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
@@ -247,11 +255,11 @@ body::before {
 /* parchment box */
 .parchment-box {
   background: linear-gradient(145deg, rgba(232,220,200,.12), rgba(232,220,200,.05));
-  border:1px solid rgba(201,162,39,.22);
+  border:1px solid silver;
   border-radius:6px;
   padding:28px 26px;
   position:relative;
-  box-shadow: inset 0 1px 0 rgba(201,162,39,.08);
+  box-shadow: inset 0 1px 0 silver;
 }
 .parchment-box::before {
   content:'';
@@ -392,7 +400,7 @@ footer .footer-sigil {
   <a href="index.html" class="nav-back">← Return to Realm</a>
   <a href="index.html" class="nav-back nav-arrow">←</a>
 
-  <div class="nav-title">Codeathon Laws</div>
+  <div class="nav-title">Vm Ideathon Laws</div>
 </nav>
 
 <!-- ─── MAIN CONTENT ─── -->
@@ -400,7 +408,7 @@ footer .footer-sigil {
 
   <!-- Header -->
   <div class="page-header">
-    <h1 class="page-title">VM Smart Idea Hackathon</h1>
+    <h1 class="page-title">Vm Ideathon</h1>
     <div class="divider"></div>
     <p class="subtitle">Laws & Decrees of the Lone Duel</p>
   </div>
@@ -410,121 +418,83 @@ footer .footer-sigil {
     <h2 class="section-header">Team Details</h2>
     <div class="parchment-box">
       <div class="rule-item">Each team must have <strong>exactly 3 members</strong>.</div>
-      <div class="rule-item">All members must belong to the <strong>same institution</strong>.</div>
+      <div class="rule-item">Team members can belong to<strong>different institution</strong>.</div>
       <div class="rule-item">Only <strong>one team per participant</strong>.</div>
       <div class="rule-item">Team composition <strong>cannot be changed</strong> after registration.</div>
     </div>
   </section>
 
-  <!-- Event Format -->
-  <section class="section">
-    <h2 class="section-header">Event Format</h2>
-    <div class="rounds-grid">
-      
-      <!-- Round 1 -->
-      <div class="round-box">
-        <div class="round-title">Round 1 — Qualifier</div>
-        <div class="round-duration">⏳ 2 Hours</div>
-        <p><strong>5 Problems:</strong> 1 Easy, 3 Medium, 1 Hard</p>
-        <p>Top teams qualify for Round 2.</p>
-      </div>
+ <!-- Event Format -->
+<!-- Event Format -->
+<section class="section">
+  <h2 class="section-header">Event Format</h2>
+  <div class="parchment-box">
+    <div class="rule-item">Ideathon is an <strong>idea-presentation–only</strong> event.</div>
+    <div class="rule-item">Team size must be <strong>2 or 3 members</strong>.</div>
+    <div class="rule-item">A maximum of <strong>30 teams</strong> can participate.</div>
+    <div class="rule-item">Each team must submit a <strong>real-world problem statement and proposed solution</strong> during registration.</div>
+    <div class="rule-item"><strong>Incomplete, unclear, or irrelevant submissions</strong> will be rejected.</div>
+  </div>
+</section>
 
-      <!-- Round 2 -->
-      <div class="round-box">
-        <div class="round-title">Round 2 — Final</div>
-        <div class="round-duration">⏳ 1 Hour 30 Minutes</div>
-        <p><strong>3 Problems:</strong> 1 Medium, 2 Hard</p>
-        <p>Final rankings based on this round.</p>
-      </div>
+<!-- Event Rounds -->
+<section class="section">
+  <h2 class="section-header">Event Rounds</h2>
+  <div class="rounds-grid">
 
+    <!-- Round 1 -->
+    <div class="round-box">
+      <div class="round-title">Round 1 — Elimination Round</div>
+      <p><strong>Evaluation Criteria:</strong> Problem relevance, innovation, feasibility, and solution clarity.</p>
+      <p><strong>Shortlisting:</strong> Only the <strong>Top 10 teams</strong> will qualify for the final round.</p>
     </div>
-  </section>
 
-  <!-- Coding Rules -->
-  <section class="section">
-    <h2 class="section-header">Coding Rules</h2>
-    <div class="parchment-box">
-      <div class="rule-item">Only <strong>organizer-approved languages</strong> are allowed.</div>
-      <div class="rule-item">All code must be written <strong>during the event</strong>.</div>
-      <div class="rule-item">Pre-written code and external libraries are <strong>prohibited</strong>.</div>
-      <div class="rule-item">All solutions must be <strong>original</strong>.</div>
+    <!-- Final Round -->
+    <div class="round-box">
+      <div class="round-title">Final Round — Idea Presentation</div>
+      <p>Shortlisted teams must <strong>present their ideas in detail</strong>.</p>
+      <p>Evaluation by <strong>field-experience judges</strong>.</p>
+      <p><strong>Winner and Runner-up</strong> selected based on overall performance.</p>
     </div>
-  </section>
 
-  <!-- No Internet & No AI Policy -->
-  <section class="section">
-    <h2 class="section-header">No Internet & No AI Policy</h2>
-    <div class="parchment-box">
-      <div class="rule-item">Internet usage is <strong>strictly prohibited</strong>.</div>
-      <div class="rule-item">AI tools/chatbots are <strong>not allowed</strong>.</div>
-      <div class="rule-item">Mobile phones, smart devices, and external storage are <strong>banned</strong>.</div>
-      <div class="rule-item">Only the <strong>offline IDE/compiler provided by organizers</strong> may be used.</div>
-      <div class="note-box">
-        <span class="disqualify-warning">⚠ Violation results in immediate disqualification.</span>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Team Collaboration -->
-  <section class="section">
-    <h2 class="section-header">Team Collaboration</h2>
-    <div class="parchment-box">
-      <div class="rule-item">Discussion <strong>within the team</strong> is allowed.</div>
-      <div class="rule-item"><strong>Inter-team communication</strong> is prohibited.</div>
-      <div class="rule-item"><strong>One system per team</strong> unless stated otherwise.</div>
-    </div>
-  </section>
+<!-- Ideathon Rules -->
+<section class="section">
+  <h2 class="section-header">Ideathon Rules</h2>
+  <div class="parchment-box">
+    <div class="rule-item">Only <strong>registered teams</strong> are allowed to participate.</div>
+    <div class="rule-item">Team members <strong>cannot be changed</strong> after registration.</div>
+    <div class="rule-item">Problem statements must address a <strong>real-world issue</strong>.</div>
+    <div class="rule-item">Ideas must be <strong>original</strong>; plagiarism leads to immediate disqualification.</div>
+    <div class="rule-item">Participants must follow the <strong>allocated presentation time</strong> strictly.</div>
+    <div class="rule-item">Any form of <strong>unfair means or misconduct</strong> results in elimination.</div>
+    <div class="rule-item"><strong>Judges’ decisions are final and binding.</strong></div>
+  </div>
+</section>
 
-  <!-- Scoring & Evaluation -->
-  <section class="section">
-    <h2 class="section-header">Scoring & Evaluation</h2>
-    <div class="parchment-box">
-      <div class="rule-item">Points based on <strong>problem difficulty</strong>.</div>
-      <div class="rule-item">Rankings based on <strong>score and submission time</strong>.</div>
-      <div class="rule-item"><strong>Tie-breaker:</strong> Higher Round 2 score, then earlier submission.</div>
-    </div>
-  </section>
+<!-- Prize Money -->
+<section class="section">
+  <h2 class="section-header">Prize Money</h2>
+  <div class="parchment-box">
+    <div class="rule-item"> <strong>Winner</strong> – ₹2,000</div>
+    <div class="rule-item"> <strong>Runner-up</strong> – ₹1,000</div>
+  </div>
+</section>
 
-  <!-- Disqualification -->
-  <section class="section">
-    <h2 class="section-header">Disqualification</h2>
-    <div class="parchment-box">
-      <div class="rule-item">Use of <strong>AI, internet, plagiarism</strong>, or unfair practices.</div>
-      <div class="note-box">
-        <span class="disqualify-warning">Violators will be banished from the realm immediately.</span>
-      </div>
-    </div>
-  </section>
+<!-- Student Coordinators -->
+<section class="section">
+  <h2 class="section-header">Student Coordinators</h2>
+  <div class="parchment-box">
+    <div class="rule-item">Kishore Ram M</div>
+    <div class="rule-item">Sanjay G R</div>
+  </div>
+</section>
 
-  <!-- Code of Conduct -->
-  <section class="section">
-    <h2 class="section-header">Code of Conduct</h2>
-    <div class="parchment-box">
-      <div class="rule-item">Maintain <strong>discipline and professionalism</strong>.</div>
-      <div class="rule-item">Judges' and organizers' <strong>decisions are final</strong>.</div>
-    </div>
-  </section>
-
-  <!-- Results & Certificates -->
-  <section class="section">
-    <h2 class="section-header">Results & Certificates</h2>
-    <div class="parchment-box">
-      <div class="rule-item">Winners decided based on <strong>Round 2 performance</strong>.</div>
-      <div class="rule-item">Certificates for <strong>finalists and winners</strong>.</div>
-    </div>
-  </section>
-  <!-- coordinators -->
-  <section class="section">
-    <h2 class="section-header">CONTACT</h2>
-    <div class="parchment-box">
-      <div class="rule-item">Mohammed Afridi-<strong>xxxxxxxxxx</strong></div>
-      <div class="rule-item">Harish-<strong>xxxxxxxxxx</strong></div>
-
-    </div>
-  </section>
+</section>
 
 </div>
-
 <!-- ─── FOOTER ─── -->
 <footer>
   <span class="footer-sigil">⚜</span>
