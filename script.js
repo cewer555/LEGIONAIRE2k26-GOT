@@ -30,7 +30,7 @@ new IntersectionObserver((entries)=>{
 });
 
 // ── Cinematic Intro removal ──
-window.addEventListener('load',()=>{ setTimeout(()=>{ const i=document.getElementById('cinematic-intro'); if(i) i.remove(); },6600); });
+window.addEventListener('load',()=>{ setTimeout(()=>{ const i=document.getElementById('cinematic-intro'); if(i) i.remove(); },3700); });
 
 // ── Modal data ──
 const eventInfo={
