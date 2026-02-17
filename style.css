@@ -396,15 +396,14 @@ body::before {
   transition: background .3s, color .3s;
 }
 .view-details-btn:hover { background:var(--gold); color:var(--stone-dark); }
-
+.vmstatus{color:red;}
 .reg-status {
   margin-top:10px; text-align:center;
   font-size:.78rem; color:var(--text-muted);
   letter-spacing:1px;
 }
 .reg-status strong { color:#6abf69; }
-.vmstatus{
-  color:red;}
+
 /* ─────────────────── TIMELINE ─────────────────── */
 .timeline-section {
   padding:90px 24px;
